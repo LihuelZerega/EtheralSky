@@ -44,7 +44,7 @@ export default function Home() {
       <NextUIProvider>
         <main>
           <Header onSearch={handleSearch} />
-          <section className="flex flex-col items-center mt-8">
+          <section className="flex flex-col items-center">
             {isLoading ? (
               <Loading />
             ) : error ? (

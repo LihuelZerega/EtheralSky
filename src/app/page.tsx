@@ -18,7 +18,7 @@ export default function Home() {
     setError(null);
 
     try {
-      const apiKey = "a929b4374165be80aa53c4093609b089";
+      const apiKey = process.env.NEXT_PUBLIC_WEATHER_API_KEY;
       const response = await fetch(
         `https://api.openweathermap.org/data/2.5/weather?q=${query}&appid=${apiKey}`
       );
